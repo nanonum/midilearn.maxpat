@@ -20,7 +20,7 @@
 	multislider
 	toggle
 
-	
+
 	gain *
 	bang *
 	button *
@@ -33,6 +33,7 @@
 	
 	* not tested
 */
+
 
 outlets = 4;
 // --------------------------------------------------------

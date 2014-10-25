@@ -49,6 +49,9 @@ multisliderが出てこない / 出すぎる
 個別の名前設定がないのでindex順になっているので1000個のmultisliderがある場合1000個追加されます
 （今後ignore設定か何かどうにかする）
 
+live.numboxがうごかせない
+>scripting nameが初期状態でlive.numboxのように.入っている物が現状未対応です
+
 
 
 

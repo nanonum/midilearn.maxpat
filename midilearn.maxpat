@@ -202,40 +202,12 @@
 				"box" : 				{
 					"fontname" : "DIN Alternate Bold",
 					"fontsize" : 12.0,
-					"id" : "obj-105",
-					"maxclass" : "number",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "int", "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 136.0, 113.0, 50.0, 20.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "DIN Alternate Bold",
-					"fontsize" : 12.0,
-					"id" : "obj-103",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 136.0, 133.0, 54.0, 18.0 ],
-					"text" : "target $1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "DIN Alternate Bold",
-					"fontsize" : 12.0,
 					"id" : "obj-97",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 113.0, 158.0, 113.0, 20.0 ],
-					"text" : "poly~ midimap_poly"
+					"patching_rect" : [ 113.0, 176.0, 116.0, 20.0 ],
+					"text" : "poly~ midilearn_poly"
 				}
 
 			}
@@ -1040,7 +1012,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 385.0, 181.0, 151.0, 18.0 ],
+					"patching_rect" : [ 385.0, 199.0, 151.0, 18.0 ],
 					"text" : "clearchecks, checkitem $1 1"
 				}
 
@@ -1088,7 +1060,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 65.0, 181.0, 320.0, 18.0 ],
+					"patching_rect" : [ 65.0, 199.0, 320.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 57.0, -1.0, 292.0, 18.0 ],
 					"rounded" : 0,
@@ -1121,7 +1093,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 4,
 					"outlettype" : [ "dictionary", "", "", "" ],
-					"patching_rect" : [ 499.0, 148.0, 59.5, 20.0 ],
+					"patching_rect" : [ 499.0, 199.0, 59.5, 20.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 1,
 						"parameter_enable" : 0
@@ -1142,11 +1114,11 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 17.0, 85.0, 163.0, 20.0 ],
 					"saved_object_attributes" : 					{
-						"filename" : "midimap.js",
+						"filename" : "midilearn.js",
 						"parameter_enable" : 0
 					}
 ,
-					"text" : "js midimap.js"
+					"text" : "js midilearn.js"
 				}
 
 			}
@@ -1213,24 +1185,6 @@
 			}
  ],
 		"lines" : [ 			{
-				"patchline" : 				{
-					"destination" : [ "obj-97", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-103", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-103", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-105", 0 ]
-				}
-
-			}
-, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-190", 0 ],
 					"disabled" : 0,
@@ -1449,8 +1403,8 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "midimap.js",
-				"bootpath" : "/Users/nanonum/Dropbox/MAX/UI/midimap",
+				"name" : "midilearn.js",
+				"bootpath" : "/Users/nanonum/Dropbox/MAX/path/midimap",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
@@ -1458,13 +1412,13 @@
 , 			{
 				"name" : "cmdclick.maxpat",
 				"bootpath" : "/Users/nanonum/Dropbox/MAX/path",
-				"patcherrelativepath" : "../../path",
+				"patcherrelativepath" : "..",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "midimap_poly.maxpat",
-				"bootpath" : "/Users/nanonum/Dropbox/MAX/UI/midimap",
+				"name" : "midilearn_poly.maxpat",
+				"bootpath" : "/Users/nanonum/Dropbox/MAX/path/midimap",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1

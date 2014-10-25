@@ -7,7 +7,6 @@
 	Copyright 2014, nanonum ( http://www.nanonum.com/ )
 	License: MIT
 
-
 	live.numbox
 	live.slider
 	live.dial
@@ -19,7 +18,9 @@
 	flonum
 	dial
 	multislider
-	toggle *
+	toggle
+
+	
 	gain *
 	bang *
 	button *
@@ -496,6 +497,7 @@ function reload(){
 	dict_to_cellblock();
 }
 function slidetoggle(i){
+	if(!this.patcher.box){return false;}
 	var thisrect = this.patcher.box.rect;
 	var height = i ? 277 : 17;
 	this.patcher.box.rect = [thisrect[0], thisrect[1], thisrect[0] + 484, thisrect[1] + height]

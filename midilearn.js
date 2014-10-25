@@ -515,6 +515,6 @@ function loadbang(){
 			if(args[i] === 'embed=1'){embed = 1;}
 		}
 	}
-	maps = new DictMgr('midimap', true, true);
+	maps = new DictMgr('midimap', true, embed);
 	reload();
 }

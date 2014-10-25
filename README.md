@@ -3,7 +3,7 @@ midilearn.maxpat
 
 The sub patcher of MIDI learning for Max/MSP
 
-使い方
+#使い方
 Scripting Nameが付いているUIオブジェクトをリストアップしてminimumとmaximumを元にオートメーションします。
 
 1. UIオブジェクトにScripting Nameと最小値、最大値を設定
@@ -11,7 +11,7 @@ Scripting Nameが付いているUIオブジェクトをリストアップしてm
 3. ドロップダウンリストから対象のコントロールを選択しLEARNをクリック後MIDIコントローラーを動かす
 
 
->UPDATE
+・UPDATE
 UIリストを更新する
 なおbpatcher読み込み後は親パッチロード時に再度リストアップされるので
 UIに変更があった場合に利用。
@@ -28,19 +28,19 @@ UIに変更があった場合に利用。
 全てのオートメーション設定を破棄
 
 
-対応しているUIオブジェクト
+#対応しているUIオブジェクト
 dial/flonum/number/multislider/slider/dial/toggle/live.numbox/live.gain/live.slider/live.dial
 
 MIDIデバイス設定はないのでMIDI chでどうにかしてください。
 
 
-embedモード
+#embedモード
 通常ルートパッチの保存されている場所に設定用jsonファイルが保存されるがbpatcherのargumentsに
 embed=1と記述するとパッチ自体に埋め込まれるようになる
 なお親パッチャーの名前を変更すると読まれなくなるので注意
 
 
-Q&A
+#Q&A
 リストビューの内容は変更できないのか
 >編集モードはあるけどセルごとの権限設定ないのでできません。
 
